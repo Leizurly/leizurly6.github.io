@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Work Clock In/Out</title>
+</head>
+<body>
+	<h1>Work Clock In/Out</h1>
+	<p>Please select an option:</p>
+	<button onclick="clockIn()">Clock In</button>
+	<button onclick="clockOut()">Clock Out</button>
+	<p id="status"></p>
+	<script>
+		function clockIn() {
+			document.getElementById("status").innerHTML = "You have clocked in at: " + new Date().toLocaleTimeString();
+		}
+		function clockOut() {
+			document.getElementById("status").innerHTML = "You have clocked out at: " + new Date().toLocaleTimeString();
+		}
+	</script>
+</body>
+</html>
